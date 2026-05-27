@@ -91,7 +91,7 @@ function formatNumber(num: number): string {
           </svg>
         </div>
         <div>
-          <span class="logo-text">FunnelFlow AI</span>
+          <span class="logo-text">FunnelFlow</span>
           <span class="header-subtext" style="display:block; font-size:0.675rem; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.02em;">
             {{ translations.subtitle[lang] }}
           </span>
