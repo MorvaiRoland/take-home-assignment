@@ -5,6 +5,14 @@ A conversion funnel visualizer and insights dashboard built for multi-step popup
 
 ---
 
+## 📸 Screenshots / Képernyőképek
+
+![Dashboard View 1](src/screenshots/dashboard.png)
+
+![Dashboard View 2](src/screenshots/dashboard_2.png)
+
+---
+
 ## 🌐 Quick Links / Gyors Linkek
 - [English Documentation & Write-up](#english-version)
 - [Magyar nyelvű dokumentáció és leírás](#magyar-valtozat)
