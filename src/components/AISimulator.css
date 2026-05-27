@@ -8,7 +8,7 @@
   height: fit-content;
 }
 
-.ai-simulator {
+[data-theme="light"] .ai-simulator {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(255, 255, 255, 0.9));
   border-color: var(--primary);
 }
@@ -64,7 +64,7 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
-.ai-action-area {
+[data-theme="light"] .ai-action-area {
   background: rgba(0, 0, 0, 0.02);
 }
 
@@ -229,7 +229,7 @@
   gap: 0.35rem;
 }
 
-.variant-col {
+[data-theme="light"] .variant-col {
   background: rgba(0, 0, 0, 0.02);
 }
 
@@ -289,7 +289,7 @@
   position: relative;
 }
 
-.copy-quote {
+[data-theme="light"] .copy-quote {
   background: rgba(99, 102, 241, 0.03);
 }
 
