@@ -1,0 +1,139 @@
+/* Layout positioning and minor resets */
+.sidebar-wrapper {
+  height: 100%;
+}
+
+.dashboard-content {
+  background: var(--bg-primary);
+  overflow-y: auto;
+  height: 100%;
+}
+
+.dashboard-grid {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dashboard-hero {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, var(--card-bg), rgba(15, 23, 42, 0.2));
+}
+
+.hero-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.campaign-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.campaign-id {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: monospace;
+  margin-top: 0.15rem;
+}
+
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.25rem;
+  gap: 1rem;
+}
+
+.hero-stat-card {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border-color);
+}
+
+.hero-stat-card.border-none {
+  border-right: none;
+}
+
+.hero-stat-label {
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.hero-stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  margin-top: 0.25rem;
+}
+
+.text-green {
+  color: var(--accent-success);
+}
+
+.text-indigo {
+  color: var(--primary);
+}
+
+/* Details area grid split */
+.dashboard-details-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-details-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pipeline-section {
+  height: fit-content;
+}
+
+.sidebar-insights-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.empty-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .hero-stat-card {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
+  }
+  .hero-stat-card.border-none {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
